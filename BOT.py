@@ -10,7 +10,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start'])
 async def process_start_command(message: types.Message):
-    await message.reply("СОЧНО", reply_markup=kb.markup_big, disable_web_page_preview=True)
+    await message.reply("", reply_markup=kb.markup_big, disable_web_page_preview=True)
 
 @dp.message_handler(content_types=['text'])
 async def get_text_messages(msg: types.Message):
